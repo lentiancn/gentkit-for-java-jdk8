@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.gentkit.logger</groupId>
+        <artifactId>gentkit-logger-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>gentkit-logger</artifactId>
+    <version>${revision}</version>
+    <name>GentKit Logger</name>
+    <description>
+        GentKit Logger is a core submodule of the GentKit framework, dedicated to providing a standardized, extensible,
+        and easily integrable logging solution.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gentkit.exception</groupId>
+            <artifactId>gentkit-exception</artifactId>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <name>田隆 (Len)</name>
+            <email>lentiancn@126.com</email>
+            <url>https://gitee.com/lentiancn</url>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://gitee.com/gentkit/gentkit-for-java-jdk8/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://gitee.com/gentkit/gentkit-for-java-jdk8</url>
+        <connection>scm:git:https://gitee.com/gentkit/gentkit-for-java-jdk8.git</connection>
+        <developerConnection>scm:git:git@gitee.com:gentkit/gentkit-for-java-jdk8.git</developerConnection>
+    </scm>
+</project>

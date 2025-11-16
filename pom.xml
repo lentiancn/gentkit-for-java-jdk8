@@ -17,7 +17,7 @@
     <modules>
         <!--        <module>gentkit-color</module>-->
         <module>gentkit-exception</module>
-        <!--        <module>gentkit-logger</module>-->
+        <module>gentkit-logger</module>
         <!--        <module>gentkit-sample</module>-->
     </modules>
 
