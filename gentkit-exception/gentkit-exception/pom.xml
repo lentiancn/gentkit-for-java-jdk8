@@ -17,14 +17,6 @@
         and easily integrable exception handling solutions.
     </description>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <developers>
         <developer>
             <name>田隆 (Len)</name>
