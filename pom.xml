@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gentkit</groupId>
+    <artifactId>gentkit-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>GentKit Parent</name>
+    <description>
+        Build a set of open-source frameworks with minimal dependencies and clean design, supporting independent usage
+        of each component, file, or even code segment without coupling between them.
+    </description>
+    <url>https://gitee.com/gentkit/gentkit-for-java-jdk8</url>
+
+    <modules>
+        <!--        <module>gentkit-color</module>-->
+        <!--        <module>gentkit-exception</module>-->
+        <!--        <module>gentkit-logger</module>-->
+        <!--        <module>gentkit-sample</module>-->
+    </modules>
+
+    <properties>
+        <revision>1.0.0-jdk8</revision>
+        <gentkit.java.version>8</gentkit.java.version>
+        <gentkit.charset>UTF-8</gentkit.charset>
+        <java.version>${gentkit.java.version}</java.version>
+        <maven.compiler.source>${gentkit.java.version}</maven.compiler.source>
+        <maven.compiler.target>${gentkit.java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>${gentkit.charset}</project.build.sourceEncoding>
+        <!-- central-publishing-maven-plugin -->
+        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
+        <!-- flatten-maven-plugin -->
+        <flatten-maven-plugin.version>1.7.3</flatten-maven-plugin.version>
+        <!-- maven-compiler-plugin -->
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.encoding>${gentkit.charset}</maven-compiler-plugin.encoding>
+        <!-- maven-deploy-plugin.version -->
+        <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
+        <!-- maven-gpg-plugin -->
+        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
+        <!-- maven-jar-plugin -->
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <!-- maven-javadoc-plugin -->
+        <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.source>${gentkit.java.version}</maven-javadoc-plugin.source>
+        <maven-javadoc-plugin.encoding>${gentkit.charset}</maven-javadoc-plugin.encoding>
+        <maven-javadoc-plugin.docencoding>${gentkit.charset}</maven-javadoc-plugin.docencoding>
+        <maven-javadoc-plugin.charset>${gentkit.charset}</maven-javadoc-plugin.charset>
+        <!-- maven-resources-plugin -->
+        <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+        <maven-resources-plugin.encoding>${gentkit.charset}</maven-resources-plugin.encoding>
+        <!-- maven-source-plugin -->
+        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${central-publishing-maven-plugin.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <publishingServerId>central</publishingServerId>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${flatten-maven-plugin.version}</version>
+                    <configuration>
+                        <updatePomFile>true</updatePomFile>
+                        <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>flatten.clean</id>
+                            <phase>clean</phase>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${maven-compiler-plugin.encoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven-deploy-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven-gpg-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <passphraseEnvName>MAVEN_GPG_PASSPHRASE</passphraseEnvName>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven-jar-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <source>${maven-javadoc-plugin.source}</source>
+                        <encoding>${maven-javadoc-plugin.encoding}</encoding>
+                        <docencoding>${maven-javadoc-plugin.docencoding}</docencoding>
+                        <charset>${maven-javadoc-plugin.charset}</charset>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources-plugin.version}</version>
+                    <configuration>
+                        <encoding>${maven-resources-plugin.encoding}</encoding>
+                        <useDefaultDelimiters>true</useDefaultDelimiters>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <developers>
+        <developer>
+            <name>田隆 (Len)</name>
+            <email>lentiancn@126.com</email>
+            <url>https://gitee.com/lentiancn</url>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://gitee.com/gentkit/gentkit-for-java-jdk8/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://gitee.com/gentkit/gentkit-for-java-jdk8</url>
+        <connection>scm:git:https://gitee.com/gentkit/gentkit-for-java-jdk8.git</connection>
+        <developerConnection>scm:git:git@gitee.com:gentkit/gentkit-for-java-jdk8.git</developerConnection>
+    </scm>
+</project>
