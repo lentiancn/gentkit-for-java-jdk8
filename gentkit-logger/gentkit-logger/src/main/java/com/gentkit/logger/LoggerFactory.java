@@ -37,7 +37,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class LoggerFactory {
 
     // Logger 实现类的集合
-    private static final Map<String, Class> LOGGER_IMPL_MAP = new ConcurrentHashMap();
+    private static final Map<String, Class> LOGGER_IMPL_MAP = new ConcurrentHashMap<>();
 
     // 当前提供器
     private static volatile String currentProvider = DefaultLoggerImpl.PROVIDER;

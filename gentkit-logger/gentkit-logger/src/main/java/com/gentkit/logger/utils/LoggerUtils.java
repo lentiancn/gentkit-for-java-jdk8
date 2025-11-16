@@ -58,8 +58,8 @@ public final class LoggerUtils {
      * @throws ClassNotFoundException 找不到类异常
      * @throws IOException            IO 异常
      */
-    public static List<Class<?>> serviceClassLoader(final Class<?> serviceClass) throws ClassNotFoundException, IOException {
-        List<Class<?>> serviceImplClasses = new ArrayList<>();
+    public static List<Class> serviceClassLoader(Class serviceClass) throws ClassNotFoundException, IOException {
+        List<Class> serviceImplClasses = new ArrayList<>();
         ClassLoader classLoader = serviceClass.getClassLoader();
         String serviceFileName = LoggerConstants.DIRECTORY_SERVICES + serviceClass.getName();
 
