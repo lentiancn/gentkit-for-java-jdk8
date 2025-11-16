@@ -43,33 +43,33 @@ public interface Logger {
 
     boolean isErrorEnabled();
 
-    void trace(final String msg, final Object... args);
-
     void trace(final Throwable cause, final String msg, final Object... args);
 
     void trace(final Throwable cause);
 
-    void debug(final String msg, final Object... args);
+    void trace(final String msg, final Object... args);
 
     void debug(final Throwable cause, final String msg, final Object... args);
 
     void debug(final Throwable cause);
 
-    void info(final String msg, final Object... args);
+    void debug(final String msg, final Object... args);
 
     void info(final Throwable cause, final String msg, final Object... args);
 
     void info(final Throwable cause);
 
-    void warn(final String msg, final Object... args);
+    void info(final String msg, final Object... args);
 
     void warn(final Throwable cause, final String msg, final Object... args);
 
     void warn(final Throwable cause);
 
-    void error(final String msg, final Object... args);
+    void warn(final String msg, final Object... args);
 
     void error(final Throwable cause, final String msg, final Object... args);
 
     void error(final Throwable cause);
+
+    void error(final String msg, final Object... args);
 }

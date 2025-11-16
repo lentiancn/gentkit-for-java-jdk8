@@ -33,10 +33,10 @@ public class DefaultLoggerImpl implements Logger {
     public static final String FACADE = "gentkit";
     public static final String PROVIDER = "gentkit";
 
-    public DefaultLoggerImpl(String name) {
+    public DefaultLoggerImpl(final String name) {
     }
 
-    public DefaultLoggerImpl(Class clazz) {
+    public DefaultLoggerImpl(final Class<?> clazz) {
     }
 
     @Override
@@ -80,12 +80,7 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void trace(final String msg, final Object... args) {
-        trace(null, msg, args);
-    }
-
-    @Override
-    public void trace(Throwable cause, String msg, Object... args) {
+    public void trace(final Throwable cause, final String msg, final Object... args) {
         StringBuffer sb = new StringBuffer();
         if (msg != null) {
             sb.append(formatMessage(msg, args));
@@ -97,8 +92,30 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void trace(Throwable cause) {
+    public void trace(final Throwable cause) {
         trace(cause, null, (Object) null);
+    }
+
+    @Override
+    public void trace(final String msg, final Object... args) {
+        trace(null, msg, args);
+    }
+
+    @Override
+    public void debug(final Throwable cause, final String msg, final Object... args) {
+        StringBuffer sb = new StringBuffer();
+        if (msg != null) {
+            sb.append(formatMessage(msg, args));
+        }
+        if (cause != null) {
+            sb.append(ExceptionUtils.throwableToString(cause));
+        }
+        System.out.println(sb);
+    }
+
+    @Override
+    public void debug(final Throwable cause) {
+        debug(cause, null, (Object) null);
     }
 
     @Override
@@ -107,7 +124,7 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void debug(Throwable cause, String msg, Object... args) {
+    public void info(final Throwable cause, final String msg, final Object... args) {
         StringBuffer sb = new StringBuffer();
         if (msg != null) {
             sb.append(formatMessage(msg, args));
@@ -119,8 +136,8 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void debug(Throwable cause) {
-        debug(cause, null, (Object) null);
+    public void info(final Throwable cause) {
+        info(cause, null, (Object) null);
     }
 
     @Override
@@ -129,7 +146,7 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void info(Throwable cause, String msg, Object... args) {
+    public void warn(final Throwable cause, final String msg, final Object... args) {
         StringBuffer sb = new StringBuffer();
         if (msg != null) {
             sb.append(formatMessage(msg, args));
@@ -137,12 +154,12 @@ public class DefaultLoggerImpl implements Logger {
         if (cause != null) {
             sb.append(ExceptionUtils.throwableToString(cause));
         }
-        System.out.println(sb);
+        System.err.println(sb);
     }
 
     @Override
-    public void info(Throwable cause) {
-        info(cause, null, (Object) null);
+    public void warn(final Throwable cause) {
+        warn(cause, null, (Object) null);
     }
 
     @Override
@@ -151,7 +168,7 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void warn(Throwable cause, String msg, Object... args) {
+    public void error(final Throwable cause, final String msg, final Object... args) {
         StringBuffer sb = new StringBuffer();
         if (msg != null) {
             sb.append(formatMessage(msg, args));
@@ -163,8 +180,8 @@ public class DefaultLoggerImpl implements Logger {
     }
 
     @Override
-    public void warn(Throwable cause) {
-        warn(cause, null, (Object) null);
+    public void error(final Throwable cause) {
+        error(cause, null, (Object) null);
     }
 
     @Override
@@ -172,24 +189,7 @@ public class DefaultLoggerImpl implements Logger {
         error(null, msg, args);
     }
 
-    @Override
-    public void error(Throwable cause, String msg, Object... args) {
-        StringBuffer sb = new StringBuffer();
-        if (msg != null) {
-            sb.append(formatMessage(msg, args));
-        }
-        if (cause != null) {
-            sb.append(ExceptionUtils.throwableToString(cause));
-        }
-        System.err.println(sb);
-    }
-
-    @Override
-    public void error(Throwable cause) {
-        error(cause, null, (Object) null);
-    }
-
-    private String formatMessage(String msg, Object... args) {
+    private String formatMessage(final String msg, final Object... args) {
         if (args == null || args.length == 0) {
             return msg;
         }
