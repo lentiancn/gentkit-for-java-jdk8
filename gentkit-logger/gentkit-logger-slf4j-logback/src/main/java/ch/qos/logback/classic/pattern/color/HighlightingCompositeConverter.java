@@ -26,12 +26,6 @@ import static ch.qos.logback.core.pattern.color.ANSIConstants.*;
  */
 public class HighlightingCompositeConverter extends ForegroundCompositeConverterBase<ILoggingEvent> {
 
-    public static void main(String[] args) {
-        String color = "#C00000";
-
-        System.out.println(Integer.parseInt(color.substring(1, 3), 16) + ";" + Integer.parseInt(color.substring(3, 5), 16) + ";" + Integer.parseInt(color.substring(5, 7), 16));
-    }
-
     @Override
     protected String getForegroundColorCode(ILoggingEvent event) {
         // {FATAL=bold #C00000, ERROR=bold #B22234, WARN=yellow, INFO=green, DEBUG=blue, TRACE=cyan}
