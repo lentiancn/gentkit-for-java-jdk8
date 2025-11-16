@@ -17,6 +17,15 @@
         and easily integrable exception handling solutions.
     </description>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
     <developers>
         <developer>
             <name>田隆 (Len)</name>
