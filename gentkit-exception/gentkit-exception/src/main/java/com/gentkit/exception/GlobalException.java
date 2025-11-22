@@ -23,7 +23,7 @@ package com.gentkit.exception;
 
 /**
  * 全局异常。<br>
- * 全局例外。<br>
+ * 全局異常。<br>
  * Global exception.<br>
  *
  * @author 田隆 (Len)
@@ -33,8 +33,11 @@ public class GlobalException extends RuntimeException {
 
     /**
      * 构造方法。<br>
-     * 構造方法。<br>
+     * 建構方法。<br>
      * Constructor.<br>
+     *
+     * @see #GlobalException(String)
+     * @see #GlobalException(String, Throwable)
      */
     public GlobalException() {
         super();
@@ -42,10 +45,12 @@ public class GlobalException extends RuntimeException {
 
     /**
      * 构造方法。<br>
-     * 構造方法。<br>
+     * 建構方法。<br>
      * Constructor.<br>
      *
-     * @param message 异常信息。<br>異常信息。<br>Exception message.<br>
+     * @param message 异常消息<br>異常訊息<br>Exception message<br>
+     * @see #GlobalException()
+     * @see #GlobalException(String, Throwable)
      */
     public GlobalException(String message) {
         super(message);
@@ -53,11 +58,13 @@ public class GlobalException extends RuntimeException {
 
     /**
      * 构造方法。<br>
-     * 構造方法。<br>
+     * 建構方法。<br>
      * Constructor.<br>
      *
-     * @param message 异常信息。<br>異常信息。<br>Exception message.<br>
-     * @param cause   异常 cause。<br>異常 cause。<br>Exception cause.<br>
+     * @param message 异常消息<br>異常訊息<br>Exception message<br>
+     * @param cause   异常原因<br>異常原因<br>Exception cause<br>
+     * @see #GlobalException()
+     * @see #GlobalException(String)
      */
     public GlobalException(String message, Throwable cause) {
         super(message, cause);

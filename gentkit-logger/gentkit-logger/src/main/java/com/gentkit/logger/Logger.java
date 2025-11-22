@@ -29,9 +29,9 @@ public interface Logger {
 
     String getFacadeName();
 
-    String getProviderName();
-
     Object getFacadeLogger();
+
+    String getProviderName();
 
     boolean isTraceEnabled();
 

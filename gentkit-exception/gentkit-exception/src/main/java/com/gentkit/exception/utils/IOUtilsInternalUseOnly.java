@@ -21,6 +21,8 @@
  */
 package com.gentkit.exception.utils;
 
+import lombok.NoArgsConstructor;
+
 import java.io.Closeable;
 import java.io.Flushable;
 
@@ -32,6 +34,7 @@ import java.io.Flushable;
  * @author 田隆 (Len)
  * @since 2025-11-12 23:33
  */
+@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 final class IOUtilsInternalUseOnly {
 
     /**

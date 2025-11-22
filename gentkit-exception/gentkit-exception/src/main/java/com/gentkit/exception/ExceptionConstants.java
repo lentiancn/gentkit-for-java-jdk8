@@ -21,6 +21,8 @@
  */
 package com.gentkit.exception;
 
+import lombok.NoArgsConstructor;
+
 /**
  * 异常常量。<br>
  * 异常常數。<br>
@@ -29,6 +31,7 @@ package com.gentkit.exception;
  * @author 田隆 (Len)
  * @since 2025-11-10 22:36
  */
+@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public final class ExceptionConstants {
 
     /**
@@ -37,12 +40,4 @@ public final class ExceptionConstants {
      * Empty string.<br>
      */
     public static final String STRING_EMPTY = "";
-
-    /**
-     * 私有构造方法，防止被实例化。<br>
-     * 私有構造方法，防止被實例化。<br>
-     * A private constructor is used to prevent instantiation.<br>
-     */
-    private ExceptionConstants() {
-    }
 }

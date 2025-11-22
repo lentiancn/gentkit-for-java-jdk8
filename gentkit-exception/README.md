@@ -24,7 +24,7 @@ System.out.println(s);
 
 ## 安装
 
-JDK: 8 及以上
+JDK: 1.8 及以上
 
 **Maven 项目** -> 在你项目的 <code>pom.xml</code> 中添加依赖 ：
 

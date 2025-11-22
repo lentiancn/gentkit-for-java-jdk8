@@ -21,8 +21,10 @@
 
     <modules>
         <module>gentkit-logger</module>
-        <module>gentkit-logger-slf4j-log4j2</module>
-        <module>gentkit-logger-slf4j-logback</module>
+        <module>gentkit-logger-with-slf4j-log4j2</module>
+        <module>gentkit-logger-with-slf4j-log4j2-config</module>
+        <module>gentkit-logger-with-slf4j-logback</module>
+        <module>gentkit-logger-with-slf4j-logback-config</module>
     </modules>
 
     <dependencyManagement>
@@ -39,12 +41,22 @@
             </dependency>
             <dependency>
                 <groupId>com.gentkit.logger</groupId>
-                <artifactId>gentkit-logger-slf4j-log4j2</artifactId>
+                <artifactId>gentkit-logger-with-slf4j-log4j2</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gentkit.logger</groupId>
+                <artifactId>gentkit-logger-with-slf4j-log4j2-config</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.gentkit.logger</groupId>
                 <artifactId>gentkit-logger-slf4j-logback</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gentkit.logger</groupId>
+                <artifactId>gentkit-logger-with-slf4j-logback-config</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
@@ -75,7 +87,7 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.2.13</version>
+                <version>1.3.16</version>
             </dependency>
             <dependency>
                 <groupId>org.osgi</groupId>
@@ -94,15 +106,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
     <developers>
         <developer>

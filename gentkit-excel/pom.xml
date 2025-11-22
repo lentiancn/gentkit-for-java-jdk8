@@ -9,25 +9,36 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.gentkit.exception</groupId>
-    <artifactId>gentkit-exception-parent</artifactId>
+    <groupId>com.gentkit.excel</groupId>
+    <artifactId>gentkit-excel-parent</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
-    <name>GentKit Exception</name>
+    <name>GentKit Excel Parent</name>
     <description>
-        The GentKit for exception handling.
+        GentKit Excel is a core submodule of the GentKit framework, dedicated to providing standardized, extensible,
+        and easily integrable excel handling solutions.
     </description>
 
     <modules>
-        <module>gentkit-exception</module>
+        <module>gentkit-excel</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.gentkit.exception</groupId>
-                <artifactId>gentkit-exception</artifactId>
+                <groupId>com.gentkit.excel</groupId>
+                <artifactId>gentkit-excel</artifactId>
                 <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>5.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.38</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -43,13 +54,13 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://gitee.com/gentkit/genkit-for-java/blob/master/LICENSE</url>
+            <url>https://gitee.com/gentkit/gentkit-for-java-jdk8/blob/master/LICENSE</url>
         </license>
     </licenses>
 
     <scm>
-        <url>https://gitee.com/gentkit/genkit-for-java</url>
-        <connection>scm:git:https://gitee.com/gentkit/gentkit-for-java.git</connection>
-        <developerConnection>scm:git:git@gitee.com:gentkit/gentkit-for-java.git</developerConnection>
+        <url>https://gitee.com/gentkit/gentkit-for-java-jdk8</url>
+        <connection>scm:git:https://gitee.com/gentkit/gentkit-for-java-jdk8.git</connection>
+        <developerConnection>scm:git:git@gitee.com:gentkit/gentkit-for-java-jdk8.git</developerConnection>
     </scm>
 </project>

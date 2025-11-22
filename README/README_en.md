@@ -9,7 +9,7 @@ component, file, or even code segment without coupling between them.
 
 ## Development Language
 
-- Java JDK 8
+- Java JDK 1.8
 
 ## Donate
 

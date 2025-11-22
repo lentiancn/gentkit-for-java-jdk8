@@ -15,14 +15,19 @@
     <url>https://gitee.com/gentkit/gentkit-for-java-jdk8</url>
 
     <modules>
-        <!--        <module>gentkit-color</module>-->
+        <module>gentkit-base64</module>
+        <module>gentkit-color</module>
+        <module>gentkit-datetime</module>
+        <module>gentkit-excel</module>
         <module>gentkit-exception</module>
+        <module>gentkit-hex</module>
+        <module>gentkit-json</module>
         <module>gentkit-logger</module>
+        <module>gentkit-string</module>
     </modules>
 
     <properties>
-        <revision>0.0.1-jdk8-SNAPSHOT</revision>
-        <!--        <revision>1.0.2-jdk8</revision>-->
+        <revision>1.0.1-jdk8</revision>
         <gentkit.java.version>8</gentkit.java.version>
         <gentkit.charset>UTF-8</gentkit.charset>
         <java.version>${gentkit.java.version}</java.version>
@@ -59,8 +64,8 @@
         <dependencies>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>5.9.3</version>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.14.1</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -68,7 +73,7 @@
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
+            <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -146,15 +151,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
-                    <configuration>
-                        <archive>
-                            <manifest>
-                                <!--                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>-->
-                                <!--                                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>-->
-                                <!--                                <addBuildEnvironmentEntries>true</addBuildEnvironmentEntries>-->
-                            </manifest>
-                        </archive>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

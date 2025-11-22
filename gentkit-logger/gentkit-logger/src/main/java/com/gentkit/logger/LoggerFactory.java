@@ -22,8 +22,9 @@
 package com.gentkit.logger;
 
 import com.gentkit.exception.utils.ExceptionUtils;
-import com.gentkit.logger.impl.DefaultLoggerImpl;
+import com.gentkit.logger.impl.NoOperationLoggerImpl;
 import com.gentkit.logger.utils.LoggerUtils;
+import lombok.NoArgsConstructor;
 
 import java.lang.reflect.Constructor;
 import java.util.List;
@@ -34,13 +35,14 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author 田隆 (Len)
  * @since 2025-11-07 22:53
  */
+@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public final class LoggerFactory {
 
     // Logger 实现类的集合
     private static final Map<String, Class> LOGGER_IMPL_MAP = new ConcurrentHashMap<>();
 
     // 当前提供器
-    private static volatile String currentProvider = DefaultLoggerImpl.PROVIDER;
+    private static volatile String currentProvider = NoOperationLoggerImpl.PROVIDER;
 
     static {
         try {
@@ -55,14 +57,6 @@ public final class LoggerFactory {
         } catch (Throwable e) {
             System.err.println("加载 Logger 实现类失败。因为：" + ExceptionUtils.throwableToString(e));
         }
-    }
-
-    /**
-     * 私有构造方法，防止被实例化。<br>
-     * 私有構造方法，防止被實例化。<br>
-     * A private constructor is used to prevent instantiation.<br>
-     */
-    private LoggerFactory() {
     }
 
     /**
@@ -116,8 +110,8 @@ public final class LoggerFactory {
     private static Logger getLogger(Object arg0) {
         Class loggerImplClass = LOGGER_IMPL_MAP.get(currentProvider);
         if (loggerImplClass == null) {
-            System.err.println("未设置提供器。使用默认提供器：" + currentProvider + "，或添加依赖 gentkit-logger-<provider>.jar");
-            return new DefaultLoggerImpl(DefaultLoggerImpl.class);
+            System.err.println("未设置提供器。使用默认提供器：" + currentProvider + "，或添加依赖 gentkit-logger-with-<FACADE>-<PROVIDER>.jar");
+            return new NoOperationLoggerImpl(NoOperationLoggerImpl.class);
         }
 
         try {
@@ -128,7 +122,7 @@ public final class LoggerFactory {
         } catch (Throwable e) {
             System.err.println("获取 Logger 实现类失败。因为：" + ExceptionUtils.throwableToString(e));
         }
-        return new DefaultLoggerImpl(DefaultLoggerImpl.class);
+        return new NoOperationLoggerImpl(NoOperationLoggerImpl.class);
     }
 
     /**

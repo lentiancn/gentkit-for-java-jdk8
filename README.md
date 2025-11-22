@@ -8,7 +8,7 @@
 
 ## 开发语言
 
-- Java JDK 8
+- Java JDK 1.8
 
 ## 捐助
 

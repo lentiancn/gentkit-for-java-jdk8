@@ -27,14 +27,14 @@ easily integrable logging solution.
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-logback</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>Latest Version</version>
 </dependency>
 ```
 
 **Gradle Project** → Add dependency to your project's `build.gradle`:
 
 ```groovy
-implementation 'com.gentkit.logger:gentkit-logger-slf4j-logback:1.x.x-jdk8'
+implementation 'com.gentkit.logger:gentkit-logger-slf4j-logback:Latest Version'
 ```
 
 > Usage
@@ -70,14 +70,14 @@ Output > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-log4j2</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>Latest Version</version>
 </dependency>
 ```
 
 **Gradle Project** → Add dependency to `build.gradle` :
 
 ```groovy
-implementation 'com.gentkit.logger:gentkit-logger-slf4j-log4j2:1.x.x-jdk8'
+implementation 'com.gentkit.logger:gentkit-logger-slf4j-log4j2:Latest Version'
 ```
 
 > Usage

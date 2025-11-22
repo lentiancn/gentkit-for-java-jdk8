@@ -21,7 +21,12 @@
  */
 package com.gentkit.logger.utils;
 
+import com.gentkit.logger.Logger;
 import com.gentkit.logger.LoggerConstants;
+import com.gentkit.logger.LoggerFactory;
+import com.gentkit.logger.impl.NoOperationLoggerImpl;
+import com.gentkit.logger.impl.SystemLoggerImpl;
+import lombok.NoArgsConstructor;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -40,14 +45,39 @@ import java.util.List;
  * @author 田隆 (Len)
  * @since 2025-11-08 16:36
  */
+@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public final class LoggerUtils {
 
-    /**
-     * 私有构造方法，防止被实例化。<br>
-     * 私有構造方法，防止被實例化。<br>
-     * A private constructor is used to prevent instantiation.<br>
-     */
-    private LoggerUtils() {
+    public static Logger getLogger(final String name) {
+        return LoggerFactory.getLogger(name);
+    }
+
+    public static Logger getLogger(final Class clazz) {
+        return LoggerFactory.getLogger(clazz);
+    }
+
+    public static Logger getLoggerWithSystemIfNoProvider(final String name) {
+        Logger logger = LoggerFactory.getLogger(name);
+
+        if (logger instanceof NoOperationLoggerImpl) {
+            return new SystemLoggerImpl(name);
+        }
+
+        return logger;
+    }
+
+    public static Logger getLoggerWithSystemIfNoProvider(final Class clazz) {
+        Logger logger = LoggerFactory.getLogger(clazz);
+
+        if (logger instanceof NoOperationLoggerImpl) {
+            return new SystemLoggerImpl(clazz);
+        }
+
+        return logger;
+    }
+
+    public static void warn(Class clazz, Throwable cause) {
+        LoggerUtils.getLogger(clazz).warn(cause);
     }
 
     /**
@@ -58,7 +88,7 @@ public final class LoggerUtils {
      * @throws ClassNotFoundException 找不到类异常
      * @throws IOException            IO 异常
      */
-    public static List<Class> serviceClassLoader(Class serviceClass) throws ClassNotFoundException, IOException {
+    public static List<Class> serviceClassLoader(final Class serviceClass) throws ClassNotFoundException, IOException {
         List<Class> serviceImplClasses = new ArrayList<>();
         ClassLoader classLoader = serviceClass.getClassLoader();
         String serviceFileName = LoggerConstants.DIRECTORY_SERVICES + serviceClass.getName();

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <conversionRule conversionWord="gentkitLevelColor"
+                    converterClass="com.gentkit.logger.logback.converter.GentKitLoggerLevelColorCompositeConverter"
+                    class="com.gentkit.logger.logback.converter.GentKitLoggerLevelColorCompositeConverter"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%gentkitLevelColor([%d{yyyy-MM-dd HH:mm:ss}]) %gentkitLevelColor(%-5level) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="ALL">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

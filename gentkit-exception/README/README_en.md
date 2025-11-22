@@ -25,7 +25,7 @@ System.out.println(s);
 
 ## Installation
 
-JDK : 8 and higher
+JDK : 1.8 and higher
 
 **Maven project** -> Add dependency to your project's <code>pom.xml</code> :
 
@@ -33,14 +33,14 @@ JDK : 8 and higher
 <dependency>
     <groupId>com.gentkit.exception</groupId>
     <artifactId>gentkit-exception</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 
 **Gradle project** -> Add dependency to your project's <code>build.gradle</code> :
 
 ```groovy
-implementation 'com.gentkit.exception:gentkit-exception:1.x.x-jdk8'
+implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 ```
 
 ## Donate

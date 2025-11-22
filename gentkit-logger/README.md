@@ -23,7 +23,6 @@ GentKit Logger 是 GentKit 框架的核心子模块，专注于提供标准化�
 **Maven 项目** -> 添加依赖至 <code>pom.xml</code> ：
 
 ```xml
-
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-logback</artifactId>
@@ -67,7 +66,6 @@ logger.error("Hello World !");
 **Maven 项目** -> 添加依赖至 <code>pom.xml</code> ：
 
 ```xml
-
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-log4j2</artifactId>

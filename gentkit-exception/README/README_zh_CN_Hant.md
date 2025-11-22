@@ -24,7 +24,7 @@ System.out.println(s);
 
 ## 安裝
 
-JDK: 8 及以上
+JDK: 1.8 及以上
 
 **Maven項目** -> 在你項目的 <code>pom.xml</code> 中添加依賴 ：
 
@@ -32,14 +32,14 @@ JDK: 8 及以上
 <dependency>
     <groupId>com.gentkit.exception</groupId>
     <artifactId>gentkit-exception</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 
 **Gradle項目** -> 在你項目的 <code>build.gradle</code> 中添加依賴 ：
 
 ```groovy
-implementation 'com.gentkit.exception:gentkit-exception:1.x.x-jdk8'
+implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 ```
 
 ## 捐助
