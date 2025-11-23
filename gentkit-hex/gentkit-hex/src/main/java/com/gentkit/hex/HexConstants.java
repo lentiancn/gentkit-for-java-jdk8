@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
  * 十六進制常數。<br>
  * Hexadecimal constants.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-22 17:43
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

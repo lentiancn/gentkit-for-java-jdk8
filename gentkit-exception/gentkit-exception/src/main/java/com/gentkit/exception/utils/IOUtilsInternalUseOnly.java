@@ -31,7 +31,7 @@ import java.io.Flushable;
  * 輸入輸出工具 (僅內部使用)。<br>
  * IO utils (Internal use only).<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-12 23:33
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

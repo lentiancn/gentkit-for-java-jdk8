@@ -30,7 +30,7 @@ import lombok.Data;
  * ANSI 顏色。<br>
  * ANSI Color.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-22 10:32
  */
 @Data

@@ -22,7 +22,7 @@
 package com.gentkit.logger;
 
 /**
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-09 10:15
  */
 public final class LoggerConstants {

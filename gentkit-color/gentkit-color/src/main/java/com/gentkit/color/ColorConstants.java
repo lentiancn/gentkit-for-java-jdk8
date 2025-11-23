@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
  * 顏色常量。<br>
  * Color constants.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-10 22:36
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

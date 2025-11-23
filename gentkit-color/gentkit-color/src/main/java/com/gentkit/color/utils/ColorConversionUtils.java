@@ -36,7 +36,7 @@ import lombok.NoArgsConstructor;
  * 顏色轉換工具。<br>
  * Color conversion utils.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-10 22:36
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

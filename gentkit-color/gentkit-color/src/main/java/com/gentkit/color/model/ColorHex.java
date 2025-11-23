@@ -31,7 +31,7 @@ import java.io.Serializable;
  * 十六進制顏色。<br>
  * Hex color.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-21 23:38
  */
 @Data

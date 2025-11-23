@@ -28,7 +28,7 @@ import lombok.Getter;
  * ANSI 16 色模式前景顏色碼。<br>
  * 16-color mode foreground color codes.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-22 16:21
  */
 @Getter

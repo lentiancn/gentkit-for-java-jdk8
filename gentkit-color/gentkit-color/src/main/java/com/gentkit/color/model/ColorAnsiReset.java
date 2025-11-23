@@ -30,7 +30,7 @@ import lombok.Data;
  * 重置。<br>
  * Reset.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-22 10:32
  */
 @Data

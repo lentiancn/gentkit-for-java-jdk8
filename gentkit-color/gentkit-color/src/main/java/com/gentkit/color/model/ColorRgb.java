@@ -31,7 +31,7 @@ import java.io.Serializable;
  * RGB 顏色。<br>
  * RGB Color.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-10 22:42
  */
 @Data

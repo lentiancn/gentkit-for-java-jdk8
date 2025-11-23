@@ -32,7 +32,7 @@ import java.io.StringWriter;
  * 異常工具。<br>
  * Exception utils.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-10 22:54
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

@@ -42,7 +42,7 @@ import java.util.List;
  * 日誌工具。<br>
  * Logger utils.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-08 16:36
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

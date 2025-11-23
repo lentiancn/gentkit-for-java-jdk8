@@ -24,7 +24,7 @@ package com.gentkit.datetime;
 import lombok.NoArgsConstructor;
 
 /**
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-19 08:24
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

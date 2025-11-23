@@ -28,7 +28,7 @@ import lombok.Getter;
  * RGB 顏色值超出範圍異常。<br>
  * RGB color out of range exception.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-21 23:38
  */
 @Getter

@@ -28,7 +28,7 @@ import lombok.Getter;
  * 十六進制顏色正規化異常。<br>
  * Hex color normalization exception.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-21 22:48
  */
 @Getter

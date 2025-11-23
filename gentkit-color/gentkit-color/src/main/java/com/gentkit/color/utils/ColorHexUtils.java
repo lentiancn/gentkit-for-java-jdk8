@@ -33,7 +33,7 @@ import lombok.NoArgsConstructor;
  * 十六進制顏色工具。<br>
  * Hex color utils.<br>
  *
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-20 23:25
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

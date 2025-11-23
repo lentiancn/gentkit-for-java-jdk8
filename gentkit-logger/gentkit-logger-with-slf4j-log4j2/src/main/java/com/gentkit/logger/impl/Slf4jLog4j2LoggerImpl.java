@@ -25,7 +25,7 @@ import com.gentkit.logger.Logger;
 import com.gentkit.logger.utils.Slf4jUtils;
 
 /**
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-07 23:22
  */
 public class Slf4jLog4j2LoggerImpl implements Logger {

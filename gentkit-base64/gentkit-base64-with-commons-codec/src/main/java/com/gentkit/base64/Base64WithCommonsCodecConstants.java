@@ -24,7 +24,7 @@ package com.gentkit.base64;
 import lombok.NoArgsConstructor;
 
 /**
- * @author 田隆 (Len)
+ * @author Len
  * @since 2025-11-18 20:01
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
