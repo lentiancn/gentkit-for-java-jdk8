@@ -21,48 +21,9 @@
  */
 package com.gentkit.string.utils;
 
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
-public class StringUtils {
-
-    public static boolean isNotNull(final String s) {
-        return (s != null);
-    }
-
-    public static boolean isNull(final String s) {
-        return !isNotNull(s);
-    }
-
-    public static boolean isNotEmpty(final String s) {
-        return (s != null && !s.isEmpty());
-    }
-
-    public static boolean isEmpty(final String s) {
-        return !isNotEmpty(s);
-    }
-
-    public static boolean isNotBlank(final String s) {
-        if (s == null) {
-            return false;
-        }
-        for (int i = 0; i < s.length(); i++) {
-            if (!Character.isWhitespace(s.charAt(i))) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public static boolean isBlank(final String s) {
-        return !isNotBlank(s);
-    }
-
-    public static String strim(final String s, final boolean trim) {
-        return trim ? (StringUtils.isNotNull(s) ? s.trim() : null) : s;
-    }
-
-    public static String strim(final String trims, final String s, final boolean trim) {
-        return trim ? trims : s;
-    }
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class StringThrowUtils {
 }
