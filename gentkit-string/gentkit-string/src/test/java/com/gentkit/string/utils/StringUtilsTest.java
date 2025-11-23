@@ -1,15 +1,13 @@
 package com.gentkit.string.utils;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilsTest {
 
-    // -- isNotNull
+    // -- boolean isNotNull(String)
 
     @DisplayName("isNotNull_shouldReturnTrue_whenStringIsNotNull")
     @Test
@@ -35,7 +33,7 @@ public class StringUtilsTest {
         assertFalse(value);
     }
 
-    // -- isNull
+    // -- boolean isNull(String)
 
     @DisplayName("isNull_shouldReturnTrue_whenStringIsNull")
     @Test
@@ -61,7 +59,7 @@ public class StringUtilsTest {
         assertFalse(value);
     }
 
-    // -- isNotEmpty
+    // -- boolean isNotEmpty(String)
 
     @DisplayName("isNotEmpty_shouldReturnTrue_whenStringIsNotEmpty")
     @Test
@@ -95,7 +93,7 @@ public class StringUtilsTest {
         assertFalse(value);
     }
 
-    // -- isEmpty
+    // -- boolean isEmpty(String)
 
     @DisplayName("isEmpty_shouldReturnTrue_whenStringIsNull")
     @Test
@@ -129,7 +127,7 @@ public class StringUtilsTest {
         assertFalse(value);
     }
 
-    // -- isNotBlank
+    // -- boolean isNotBlank(String)
 
     @DisplayName("isNotBlank_shouldReturnTrue_whenStringIsNotBlank")
     @Test
@@ -155,7 +153,7 @@ public class StringUtilsTest {
         assertFalse(value);
     }
 
-    // -- isBlank
+    // -- boolean isBlank(String)
 
     @DisplayName("isBlank_shouldReturnTrue_whenStringIsBlank")
     @Test
@@ -179,5 +177,39 @@ public class StringUtilsTest {
         boolean value = StringUtils.isBlank("test");
 
         assertFalse(value);
+    }
+
+    // -- String strim(String, boolean)
+
+    @DisplayName("strim_shouldNoTrim_whenArg0IsNullArg1IsTrue")
+    @Test
+    public void strim_shouldNoTrim_whenArg0IsNullArg1IsTrue() {
+        String value = StringUtils.strim(null, true);
+
+        assertNull(value);
+    }
+
+    @DisplayName("strim_shouldNoTrim_whenArg0IsNullArg1IsFalse")
+    @Test
+    public void strim_shouldNoTrim_whenArg0IsNullArg1IsFalse() {
+        String value = StringUtils.strim(null, false);
+
+        assertNull(value);
+    }
+
+    @DisplayName("strim_shouldTrimmed_whenArg0IsNotNullArg1IsTrue")
+    @Test
+    public void strim_shouldTrimmed_whenArg0IsNotNullArg1IsTrue() {
+        String value = StringUtils.strim("  te  st ", true);
+
+        assertEquals("te  st", value);
+    }
+
+    @DisplayName("strim_shouldNoTrim_whenArg0IsNotNullArg1IsFalse")
+    @Test
+    public void strim_shouldNoTrim_whenArg0IsNotNullArg1IsFalse() {
+        String value = StringUtils.strim("  te  st ", false);
+
+        assertEquals("  te  st ", value);
     }
 }
