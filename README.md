@@ -1,8 +1,8 @@
 # GentKit
 
-简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
+![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)
 
-![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk17.svg)
+简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
 
 ## 介绍
 
