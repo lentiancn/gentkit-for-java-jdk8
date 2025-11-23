@@ -122,6 +122,6 @@ logger.error("Hello World !");
 
 GentKit 的授权遵循许可证 [MIT License](../LICENSE) 。
 
-## 联系我们
+## 联系方式
 
 电子邮箱：gentkit@126.com

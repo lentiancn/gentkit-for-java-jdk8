@@ -56,6 +56,6 @@ implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 
 GentKit 採用 [MIT License](../../LICENSE) 協議進行授權 。
 
-## 聯絡我們
+## 聯絡方式
 
 電子信箱：gentkit@126.com

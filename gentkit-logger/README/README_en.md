@@ -126,6 +126,6 @@ greatly appreciated! (●'◡'●)
 
 GentKit is licensed under the [MIT License](../../LICENSE).
 
-## Contact Us
+## Contact Methods
 
 E-mail: gentkit@126.com
