@@ -8,11 +8,11 @@
 
 ## 开发语言
 
-- Java JDK 1.8
+- Java JDK 1.8，但是如果需要更高版本环境，请移步至 [Java JDK 17](https://gitee.com/gentkit/gentkit-for-java-jdk17)
 
 ## 捐助
 
-如果您觉得我们的开源软件对你有所帮助，请扫下方二维码打赏我们一杯咖啡。支持一下嘛！(●'◡'●)
+如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
 
 <div style="display:flex;">
   <img src="README/Donate/alipay.jpg" alt="支付宝打赏" width="40%" style="width:40%;">

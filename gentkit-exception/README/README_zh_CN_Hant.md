@@ -44,7 +44,7 @@ implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 
 ## 捐助
 
-如果您覺得我們的開源軟體對您有所幫助，請掃描下方 QR Code 支持我們一杯咖啡！(●'◡'●)
+若內容對你有幫助，可掃下方二維碼打賞一杯咖啡支持一下！你的認可，是創作的動力，非常感謝～ (●'◡'●)
 
 <div style="display:flex;">
   <img src="../../README/Donate/alipay.jpg" alt="支付寶贊助" width="40%" style="width:40%;">

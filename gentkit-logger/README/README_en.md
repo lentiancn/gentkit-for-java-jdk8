@@ -113,8 +113,8 @@ Output > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !
 
 ## Donate
 
-If you find our open-source software helpful, please scan the QR code below to buy us a cup of coffee. Your support is
-greatly appreciated! (●'◡'●)
+If the content was helpful to you, feel free to scan the QR code below to buy me a coffee as support! Your recognition
+is the motivation for my creation, thanks so much~ (●'◡'●)
 
 <div style="display:flex;">
   <img src="../../README/Donate/alipay.jpg" alt="Alipay Donation" width="40%" style="width:40%;">
