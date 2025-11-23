@@ -1,6 +1,7 @@
 # GentKit
 
 ![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)
+[![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-java-jdk8/master)](https://codecov.io/gh/lentiancn/gentkit-for-java-jdk8)
 [![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-java-jdk8.svg?label=release)](https://github.com/lentiancn/gentkit-for-java-jdk8/releases)
 
 简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
