@@ -118,7 +118,7 @@ logger.error("Hello World !");
   <img src="../../README/Donate/wechat.jpg" alt="微信贊助" width="40%" style="width:40%;">
 </div>
 
-## 授權協議
+## 許可證
 
 GentKit 採用 [MIT License](../../LICENSE) 協議進行授權 。
 

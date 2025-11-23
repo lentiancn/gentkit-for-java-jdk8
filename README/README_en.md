@@ -2,6 +2,8 @@
 
 [简体中文](../README.md) | [繁體中文](../README/README_zh_CN_Hant.md) | English
 
+![License](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk17.svg)
+
 ## Introduction
 
 Build a set of open-source frameworks with minimal dependencies and clean design, supporting independent usage of each

@@ -2,6 +2,8 @@
 
 简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
 
+![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk17.svg)
+
 ## 介绍
 
 打造一组可以最少依赖、干净的开源框架，支持每个组件、文件甚至代码段可以独立使用，相互没有耦合。
