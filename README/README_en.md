@@ -1,6 +1,6 @@
 # GentKit
 
-![License](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)
+[![License](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)](../LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-java-jdk8/master)](https://codecov.io/gh/lentiancn/gentkit-for-java-jdk8)
 [![GitHub Release](https://img.shields.io/github/tag/lentiancn/gentkit-for-java-jdk8.svg?label=release)](https://github.com/lentiancn/gentkit-for-java-jdk8/releases)
 
