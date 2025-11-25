@@ -31,7 +31,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author Len <lentiancn@126.com>
+ * @author Len<lentiancn@126.com>
  * @since 2025-11-19 08:24
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
