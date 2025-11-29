@@ -14,6 +14,14 @@
 
 - Java JDK 1.8，但是如果需要更高版本环境，请移步至 [Java JDK 17](https://gitee.com/gentkit/gentkit-for-java-jdk17)
 
+## 组件列表
+
+| 序号 | 组件                                         | 说明                                    |
+|----|:-------------------------------------------|:--------------------------------------|
+| 1  | [GentKit Base64](gentkit-base64/README.md) | Base64 encoding and decoding library. |
+| 2  | [GentKit Color](gentkit-color/README.md)   | Color library.                        |
+| 3  | [GentKit Logger](gentkit-logger/README.md) | Logger library.                       |
+
 ## 捐助
 
 如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)

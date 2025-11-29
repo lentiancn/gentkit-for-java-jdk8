@@ -16,6 +16,14 @@ component, file, or even code segment without coupling between them.
 - Java JDK 1.8, but if you need to use a higher-version environment, please proceed
   to [Java JDK 17](https://gitee.com/gentkit/gentkit-for-java-jdk17)
 
+## Components
+
+| NO. | Component                                  | Description                           |
+|-----|:-------------------------------------------|:--------------------------------------|
+| 1   | [GentKit Base64](gentkit-base64/README.md) | Base64 encoding and decoding library. |
+| 2   | [GentKit Color](gentkit-color/README.md)   | Color library.                        |
+| 3   | [GentKit Logger](gentkit-logger/README.md) | Logger library.                       |
+
 ## Donate
 
 If the content was helpful to you, feel free to scan the QR code below to buy me a coffee as support! Your recognition
