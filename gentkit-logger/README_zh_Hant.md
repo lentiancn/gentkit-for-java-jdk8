@@ -113,9 +113,9 @@ logger.error("Hello World !");
 若內容對你有幫助，可掃下方二維碼打賞一杯咖啡支持一下！你的認可，是創作的動力，非常感謝～ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="../../README/Donate/alipay.jpg" alt="支付寶贊助" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="支付寶贊助" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="../../README/Donate/wechat.jpg" alt="微信贊助" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="微信贊助" width="30%" style="width:40%;">
 </div>
 
 ## 許可證
