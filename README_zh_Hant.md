@@ -1,10 +1,10 @@
 # GentKit
 
-[![許可證](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)](../LICENSE)
+[![許可證](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk8.svg)](LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-java-jdk8/master)](https://codecov.io/gh/lentiancn/gentkit-for-java-jdk8)
 [![GitHub 發行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-java-jdk8.svg?label=release)](https://github.com/lentiancn/gentkit-for-java-jdk8/releases)
 
-[简体中文](../README.md) | 繁體中文 | [English](README_en.md)
+[简体中文](README.md) | 繁體中文 | [English](README_en.md)
 
 ## 介紹
 
@@ -19,14 +19,14 @@
 若內容對你有幫助，可掃下方二維碼打賞一杯咖啡支持一下！你的認可，是創作的動力，非常感謝～ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="../README/Donate/alipay.jpg" alt="支付寶贊助" width="30%" style="width:40%;">
+  <img src="docs/Donate/alipay.jpg" alt="支付寶贊助" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="../README/Donate/wechat.jpg" alt="微信贊助" width="30%" style="width:40%;">
+  <img src="docs/Donate/wechat.jpg" alt="微信贊助" width="30%" style="width:40%;">
 </div>
 
 ## 許可證
 
-GentKit 採用 [MIT License](../LICENSE) 協議進行授權 。
+GentKit 採用 [MIT License](LICENSE) 協議進行授權 。
 
 ## 聯絡方式
 

@@ -4,7 +4,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-java-jdk8/master)](https://codecov.io/gh/lentiancn/gentkit-for-java-jdk8)
 [![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-java-jdk8.svg?label=release)](https://github.com/lentiancn/gentkit-for-java-jdk8/releases)
 
-简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
+简体中文 | [繁體中文](README_zh_Hant.md) | [English](README_en.md)
 
 ## 介绍
 
@@ -19,9 +19,9 @@
 如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="README/Donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
+  <img src="docs/Donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="README/Donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
+  <img src="docs/Donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
 </div>
 
 ## 许可证
