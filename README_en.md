@@ -30,9 +30,9 @@ If the content was helpful to you, feel free to scan the QR code below to buy me
 is the motivation for my creation, thanks so much~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="docs/Donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/Donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
 </div>
 
 ## License
