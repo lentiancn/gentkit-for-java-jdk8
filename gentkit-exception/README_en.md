@@ -1,6 +1,6 @@
 # GentKit Exception
 
-[简体中文](../README.md) | [繁體中文](README_zh_CN_Hant.md) | English
+[简体中文](README.md) | [繁體中文](README_zh_Hant.md) | English
 
 ## Introduction
 
@@ -56,7 +56,7 @@ is the motivation for my creation, thanks so much~ (●'◡'●)
 
 ## License
 
-GentKit is licensed under the [MIT License](../../LICENSE).
+GentKit is licensed under the [MIT License](../LICENSE).
 
 ## Contact Methods
 

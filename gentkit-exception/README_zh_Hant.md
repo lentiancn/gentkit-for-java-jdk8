@@ -1,6 +1,6 @@
 # GentKit Exception
 
-[简体中文](../README.md) | 繁體中文 | [English](README_en.md)
+[简体中文](README.md) | 繁體中文 | [English](README_en.md)
 
 ## 介紹
 
@@ -54,7 +54,7 @@ implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 
 ## 許可證
 
-GentKit 採用 [MIT License](../../LICENSE) 協議進行授權 。
+GentKit 採用 [MIT License](../LICENSE) 協議進行授權 。
 
 ## 聯絡方式
 

@@ -1,6 +1,6 @@
 # GentKit Logger
 
-[简体中文](../README.md) | 繁體中文 | [English](README_en.md)
+[简体中文](README.md) | 繁體中文 | [English](README_en.md)
 
 ## 介紹
 
@@ -120,7 +120,7 @@ logger.error("Hello World !");
 
 ## 許可證
 
-GentKit 採用 [MIT License](../../LICENSE) 協議進行授權 。
+GentKit 採用 [MIT License](../LICENSE) 協議進行授權 。
 
 ## 聯絡方式
 
