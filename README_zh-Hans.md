@@ -38,4 +38,4 @@ GentKit 的授权遵循许可证 [MIT License](LICENSE) 。
 
 ## 联系方式
 
-电子邮箱：gentkit@126.com
+电子邮箱： gentkit@126.com
