@@ -124,7 +124,7 @@ is the motivation for my creation, thanks so much~ (●'◡'●)
 
 ## License
 
-GentKit is licensed under the [MIT License](../LICENSE).
+`GentKit` is licensed under the [MIT License](../LICENSE).
 
 ## Contact
 

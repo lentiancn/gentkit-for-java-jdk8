@@ -34,7 +34,7 @@
 
 ## 許可證
 
-GentKit 採用 [MIT License](LICENSE) 協議進行授權 。
+`GentKit` 採用 [MIT License](LICENSE) 協議進行授權 。
 
 ## 聯絡方式
 
