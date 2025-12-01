@@ -1,127 +1,131 @@
 # GentKit Logger
 
-简体中文 | [繁體中文](README_zh_Hant.md) | [English](README_en.md)
+English | [简体中文](README_zh-Hans.md) | [繁體中文](README_zh-Hant.md)
 
-## 介绍
+## Introduction
 
-GentKit Logger 是 GentKit 框架的核心子模块，专注于提供标准化、可扩展、易集成的日志处理解决方案。
+GentKit Logger is a core submodule of the GentKit framework, dedicated to providing a standardized, extensible, and
+easily integrable logging solution.
 
-## 功能列表
+## Feature List
 
-### 1. 使用 <code>SLF4j</code> 作为门面，<code>Logback</code> 作为提供器，实现日志管理 。
+### 1. Using `SLF4j` as the facade and `Logback` as the provider to implement log management.
 
-| 序号 | 功能             | 说明                                                                |
-|----|:---------------|:------------------------------------------------------------------|
-| 1  | JCL            | Java Commons Logging                                              |
-| 2  | JUL            | Java Util Logging                                                 |
-| 3  | Log4j 1        |                                                                   |
-| 4  | Log4j 2        |                                                                   |
-| 5  | GentKit Logger | 使用 Logback 作为默认提供器，JCL，JUL，Log4j 1，Log4j 2 ... 统一由 Logback 配置文件管理 |
+| No. | Feature        | Description                                                                                                        |
+|-----|----------------|--------------------------------------------------------------------------------------------------------------------|
+| 1   | JCL            | Java Commons Logging                                                                                               |
+| 2   | JUL            | Java Util Logging                                                                                                  |
+| 3   | Log4j 1        |                                                                                                                    |
+| 4   | Log4j 2        |                                                                                                                    |
+| 5   | GentKit Logger | Uses Logback as the default provider. JCL, JUL, Log4j 1, Log4j 2... are all managed by Logback configuration files |
 
-> 安装方法
+> Installation
 
-**Maven 项目** -> 添加依赖至 <code>pom.xml</code> ：
+**Maven Project** → Add dependency to `pom.xml` :
 
 ```xml
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-logback</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>Latest Version</version>
 </dependency>
 ```
 
-**Gradle 项目** -> 在你项目的 <code>build.gradle</code> 中添加依赖 ：
+**Gradle Project** → Add dependency to your project's `build.gradle`:
 
 ```groovy
-implementation 'com.gentkit.logger:gentkit-logger-slf4j-logback:1.x.x-jdk8'
+implementation 'com.gentkit.logger:gentkit-logger-slf4j-logback:Latest Version'
 ```
 
-> 使用方法
+> Usage
 
 ```
 Logger logger = LoggerFactory.getLogger(getClass());
 
-// 1. 打印门面和提供器使用情况
-System.out.println("门面: " + LOGGER.getFacadeName() + "，提供器: " + LOGGER.getProviderName());
-// 2. 日志输出
+// 1. Print facade and provider usage
+System.out.println("Facade: " + LOGGER.getFacadeName() + ", Provider: " + LOGGER.getProviderName());
+// 2. Log output
 logger.error("Hello World !");
 
 ---------------------------------------------------------------------
-输出 > "门面: slf4j，提供器: logback"
-输出 > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !"
+Output > "Facade: slf4j, Provider: logback"
+Output > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !"
 ```
 
-### 2. 使用 <code>SLF4j</code> 作为门面，<code>log4j 2</code> 作为提供器，实现日志管理 。
+### 2. Using `SLF4j` as the facade and `log4j 2` as the provider to implement log management.
 
-| 序号 | 功能             | 说明                                                                |
-|----|:---------------|:------------------------------------------------------------------|
-| 1  | JCL            | Java Commons Logging                                              |
-| 2  | JUL            | Java Util Logging                                                 |
-| 3  | Log4j 1        |                                                                   |
-| 4  | Logback        |                                                                   |
-| 5  | GentKit Logger | 使用 Log4j 2 作为默认提供器，JCL，JUL，Log4j 1，Logback ... 统一由 Log4j 2 配置文件管理 |
+| No. | Feature        | Description                                                                                                        |
+|-----|----------------|--------------------------------------------------------------------------------------------------------------------|
+| 1   | JCL            | Java Commons Logging                                                                                               |
+| 2   | JUL            | Java Util Logging                                                                                                  |
+| 3   | Log4j 1        |                                                                                                                    |
+| 4   | Logback        |                                                                                                                    |
+| 5   | GentKit Logger | Uses Log4j 2 as the default provider. JCL, JUL, Log4j 1, Logback... are all managed by Log4j 2 configuration files |
 
-> 安装方法
+> Installation Method
 
-**Maven 项目** -> 添加依赖至 <code>pom.xml</code> ：
+**Maven Project** → Add dependency to `pom.xml` :
 
 ```xml
 <dependency>
     <groupId>com.gentkit.logger</groupId>
     <artifactId>gentkit-logger-slf4j-log4j2</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>Latest Version</version>
 </dependency>
 ```
 
-**Gradle 项目** -> 添加依赖至 <code>build.gradle</code> ：
+**Gradle Project** → Add dependency to `build.gradle` :
 
 ```groovy
-implementation 'com.gentkit.logger:gentkit-logger-slf4j-log4j2:1.x.x-jdk8'
+implementation 'com.gentkit.logger:gentkit-logger-slf4j-log4j2:Latest Version'
 ```
 
-> 使用方法
+> Usage
 
 ```
 Logger logger = LoggerFactory.getLogger(getClass());
 
-// 1. 打印门面和提供器使用情况
-System.out.println("门面: " + LOGGER.getFacadeName() + "，提供器: " + LOGGER.getProviderName());
-// 2. 日志输出
+// 1. Print facade and provider usage
+System.out.println("Facade: " + LOGGER.getFacadeName() + ", Provider: " + LOGGER.getProviderName());
+// 2. Log output
 logger.error("Hello World !");
 
 ---------------------------------------------------------------------
-输出 > "门面: slf4j，提供器: log4j2"
-输出 > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !"
+Output > "Facade: slf4j, Provider: log4j2"
+Output > "23:01:15.030 [main] ERROR com.gentkit.logger.LogSample - Hello World !"
 ```
 
-## 答疑
+## FAQ
 
-* 问：slf4j+log4j2 和 slf4j+logback 有什么区别？能同时引用吗？
-    * 答：slf4j 是门面，log4j2 和 logback 都是提供器。slf4j+log4j2 和 slf4j+logback 不能共存，会冲突。
+* Q: What's the difference between slf4j+log4j2 and slf4j+logback? Can they be used together?
+    * A: slf4j is the facade, while log4j2 and logback are both providers. slf4j+log4j2 and slf4j+logback cannot coexist
+      as they will conflict.
 
-* 问：该如何选择哪一种组合？
-    * 答：优先推荐 slf4j+logback，因为 slf4j 和 logback 是同一个作者开发的，兼容性最好。
+* Q: How to choose which combination to use?
+    * A: It is recommended to prioritize slf4j+logback, as they were developed by the same author and have the best
+      compatibility.
 
-## 附录
+## Appendix
 
-* Slf4j 手册：https://www.slf4j.org/manual.html
-* Logback 手册：https://logback.qos.ch/manual/configuration.html
-* Log4j2 手册：https://logging.apache.org/log4j/2.x/manual/configuration.html
+* Slf4j Manual: https://www.slf4j.org/manual.html
+* Logback Manual: https://logback.qos.ch/manual/configuration.html
+* Log4j2 Manual: https://logging.apache.org/log4j/2.x/manual/configuration.html
 
-## 捐助
+## Donate
 
-如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
+If the content was helpful to you, feel free to scan the QR code below to buy me a coffee as support! Your recognition
+is the motivation for my creation, thanks so much~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
 </div>
 
-## 许可证
+## License
 
-GentKit 的授权遵循许可证 [MIT License](../LICENSE) 。
+GentKit is licensed under the [MIT License](../LICENSE).
 
-## 联系方式
+## Contact Methods
 
-电子邮箱：gentkit@126.com
+E-mail: gentkit@126.com
