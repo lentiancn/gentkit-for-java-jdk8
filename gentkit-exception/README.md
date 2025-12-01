@@ -1,61 +1,63 @@
 # GentKit Exception
 
-简体中文 | [繁體中文](README_zh_Hant.md) | [English](README_en.md)
+English | [简体中文](README_zh-Hans.md) | [繁體中文](README_zh-Hant.md)
 
-## 介绍
+## Introduction
 
-GentKit Exception 是 GentKit 框架的核心子模块，专注于提供标准化、可扩展、易集成的异常处理解决方案。
+GentKit Exception is a core submodule of the GentKit framework, dedicated to providing standardized, extensible, and
+easily integrable exception handling solutions.
 
-## 功能列表
+## List of Features
 
 * <code>**ExceptionUtils.throwableToString(Throwable cause)**</code>
 
 ```java
-// [ 输入 ]
-new Exception("测试");
+// [ OUTPUT ]
+new Exception("test");
 
-// [ 执行 ]
-String s = ExceptionUtils.throwableToString(new Exception("测试"));
+// [ EXECUTE ]
+String s = ExceptionUtils.throwableToString(new Exception("test"));
 System.out.println(s);
 
-// [ 输出 ]
-"java.lang.Exception: 测试"
+// [ OUTPUT ]
+"java.lang.Exception: test"
 ```
 
-## 安装
+## Installation
 
-JDK: 1.8 及以上
+JDK : 1.8 and higher
 
-**Maven 项目** -> 在你项目的 <code>pom.xml</code> 中添加依赖 ：
+**Maven project** -> Add dependency to your project's <code>pom.xml</code> :
 
 ```xml
 <dependency>
     <groupId>com.gentkit.exception</groupId>
     <artifactId>gentkit-exception</artifactId>
-    <version>1.x.x-jdk8</version>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 
-**Gradle 项目** -> 在你项目的 <code>build.gradle</code> 中添加依赖 ：
+**Gradle project** -> Add dependency to your project's <code>build.gradle</code> :
 
 ```groovy
-implementation 'com.gentkit.exception:gentkit-exception:1.x.x-jdk8'
+implementation 'com.gentkit.exception:gentkit-exception:1.0.0-RELEASE'
 ```
 
-## 捐助
+## Donate
 
-如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
+If the content was helpful to you, feel free to scan the QR code below to buy me a coffee as support! Your recognition
+is the motivation for my creation, thanks so much~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
 </div>
 
-## 许可证
+## License
 
-GentKit 的授权遵循许可证 [MIT License](../LICENSE) 。
+GentKit is licensed under the [MIT License](../LICENSE).
 
-## 联系方式
+## Contact Methods
 
-电子邮箱：gentkit@126.com
+E-mail: gentkit@126.com
