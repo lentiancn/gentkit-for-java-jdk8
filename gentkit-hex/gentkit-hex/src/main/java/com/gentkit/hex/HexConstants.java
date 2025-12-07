@@ -30,7 +30,7 @@ import lombok.NoArgsConstructor;
  * 十六進制常數。<br>
  * Hexadecimal constants.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-22 17:43
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

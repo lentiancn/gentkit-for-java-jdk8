@@ -28,7 +28,7 @@ package com.gentkit.exception;
  * 全局異常。<br>
  * Global exception.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-10 23:17
  */
 public class GlobalException extends RuntimeException {

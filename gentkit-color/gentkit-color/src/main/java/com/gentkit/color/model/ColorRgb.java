@@ -33,7 +33,7 @@ import java.io.Serializable;
  * RGB 顏色。<br>
  * RGB Color.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-10 22:42
  */
 @Data

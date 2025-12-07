@@ -26,7 +26,7 @@ package com.gentkit.string;
 import lombok.NoArgsConstructor;
 
 /**
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-18 20:01
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

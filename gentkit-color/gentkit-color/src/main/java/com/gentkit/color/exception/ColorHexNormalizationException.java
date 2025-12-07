@@ -30,7 +30,7 @@ import lombok.Getter;
  * 十六進制顏色正規化異常。<br>
  * Hex color normalization exception.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-21 22:48
  */
 @Getter

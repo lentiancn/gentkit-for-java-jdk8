@@ -34,7 +34,7 @@ import java.io.StringWriter;
  * 異常工具。<br>
  * Exception utils.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-10 22:54
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

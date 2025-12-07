@@ -30,7 +30,7 @@ import com.gentkit.exception.GlobalException;
  * 顏色異常。<br>
  * Color exception.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-21 22:48
  */
 public class ColorException extends GlobalException {

@@ -33,7 +33,7 @@ import java.io.Serializable;
  * 十六進制顏色。<br>
  * Hex color.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-21 23:38
  */
 @Data

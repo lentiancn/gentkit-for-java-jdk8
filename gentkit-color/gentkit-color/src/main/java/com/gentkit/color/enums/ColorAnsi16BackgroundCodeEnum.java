@@ -30,7 +30,7 @@ import lombok.Getter;
  * ANSI 16 色模式前景顏色碼。<br>
  * 16-color mode foreground color codes.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-22 16:21
  */
 @Getter

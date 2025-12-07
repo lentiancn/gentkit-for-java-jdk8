@@ -32,7 +32,7 @@ import lombok.Data;
  * ANSI 顏色。<br>
  * ANSI Color.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-22 10:32
  */
 @Data

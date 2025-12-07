@@ -30,7 +30,7 @@ import lombok.NoArgsConstructor;
  * 异常常數。<br>
  * Exception constants.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-10 22:36
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

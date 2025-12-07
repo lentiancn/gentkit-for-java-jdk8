@@ -32,7 +32,7 @@ import lombok.Data;
  * 重置。<br>
  * Reset.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-22 10:32
  */
 @Data
