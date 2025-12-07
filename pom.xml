@@ -27,7 +27,7 @@
     </modules>
 
     <properties>
-        <revision>1.0.3-jdk8</revision>
+        <revision>1.0.4-jdk8</revision>
         <gentkit.java.version>8</gentkit.java.version>
         <gentkit.charset>UTF-8</gentkit.charset>
         <java.version>${gentkit.java.version}</java.version>
