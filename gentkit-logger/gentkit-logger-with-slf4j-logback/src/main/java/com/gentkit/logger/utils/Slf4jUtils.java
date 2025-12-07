@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
 /**
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-09 17:51
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

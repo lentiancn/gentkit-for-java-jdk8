@@ -26,7 +26,7 @@ package com.gentkit.logger.impl;
 import com.gentkit.logger.Logger;
 
 /**
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-07 22:53
  */
 public class NoOperationLoggerImpl implements Logger {

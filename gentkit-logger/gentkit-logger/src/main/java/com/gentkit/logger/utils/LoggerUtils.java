@@ -44,7 +44,7 @@ import java.util.List;
  * 日誌工具。<br>
  * Logger utils.<br>
  *
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-08 16:36
  */
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)

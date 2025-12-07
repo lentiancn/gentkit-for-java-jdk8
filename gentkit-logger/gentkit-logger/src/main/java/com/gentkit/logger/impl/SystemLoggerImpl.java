@@ -27,7 +27,7 @@ import com.gentkit.exception.utils.ExceptionUtils;
 import com.gentkit.logger.Logger;
 
 /**
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-22 09:19
  */
 public class SystemLoggerImpl implements Logger {

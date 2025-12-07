@@ -24,7 +24,7 @@
 package com.gentkit.logger;
 
 /**
- * @author Len<lentiancn@126.com>
+ * @author Len (lentiancn@126.com)
  * @since 2025-11-09 10:15
  */
 public final class LoggerConstants {
